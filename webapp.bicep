@@ -29,7 +29,7 @@ resource appservice 'Microsoft.Web/sites@2022-03-01' = [for i in range(0,2) : {
     }
   }
 }]
-//test
+//test123
 resource srcControls 'Microsoft.Web/sites/sourcecontrols@2022-03-01' = [for i in range(0,2) : {
   name: '${appservice[i].name}/web'
   properties: {
