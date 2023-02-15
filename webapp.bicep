@@ -30,7 +30,7 @@ resource appservice 'Microsoft.Web/sites@2022-03-01' = [for i in range(0,2) : {
   }
 }]
 //test
-resource srcControls 'Microsoft.Web/sites/sourcecontrols@2022-03-01' = [for i in range(0,0) : {
+resource srcControls 'Microsoft.Web/sites/sourcecontrols@2022-03-01' = [for i in range(0,2) : {
   name: '${appservice[i].name}/web'
   properties: {
     repoUrl: repositoryUrl
